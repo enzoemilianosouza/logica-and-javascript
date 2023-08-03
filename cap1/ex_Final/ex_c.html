@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício C</title>
+</head>
+<body>
+  <h2>Exercício</h2>
+  <p> C - ELABORA UM PROGRAMA PARA UMA LOJA, O QUAL LEIA O PREÇO DE UM PRODUTO E INFORME AS OPÇÕES DE PAGAMENTO DA LOJA. CALCULE E INFORME O VALOR PARA PAGAMENTO Á VISTA COM 10% DE DESCONTO E O VALOR EM 3X</p>
+</body>
+  <script>
+
+    const productValue= Number(prompt("Insira o valor do produto!")).toFixed(2);
+
+    const cashCalculation = productValue / 10
+    const inCash = (productValue - cashCalculation).toFixed(2)
+
+    const installments = (productValue / 3).toFixed(2)
+    alert(
+      `O valor do produto é de R$ ${productValue}\n À Vista é R$ ${inCash}\n Ou 3X de R$ ${installments}`
+    );
+
+  </script>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício B</title>
+</head>
+<body>
+  <h2>Exercício</h2>
+  <p> B - ELABORA UM PROGRAMA PARA UMA PIZZARIA, O QUAL LEIA O VALOR TOTAL DE UMA CONTA E QUANTOS CLIENTES VÃO PAGÁ-LA. CALCULE E INFORME O VALOR A SER PAGO POR CLIENTE.</p>
+</body>
+  <script>
+
+    const accountValue = Number(prompt("Insira o valor da conta!")).toFixed(2);
+    const numberOfCustomers = Number(prompt('Quantos clientes na mesa?'))
+    
+    const valuePerCustomer = accountValue / numberOfCustomers
+    
+    alert(
+      `O valor da conta é de R$${accountValue} e o número de clientes é ${numberOfCustomers}, o valor por cliente vai ser de: R$${valuePerCustomer.toFixed(2)}`
+    );
+
+  </script>
+</html>
