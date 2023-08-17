@@ -9,7 +9,7 @@ frm.addEventListener("submit", (e) => {
   const tempo = Number(frm.inTempo.value);
 
   const calculo = tempo / 15;
-  const calculoFinal = Math.round(calculo) * valor;
+  const calculoFinal = Math.ceil(calculo) * valor;
 
   resp.innerText = `Valor a Pagar R$: ${calculoFinal}`;
 });

@@ -10,6 +10,7 @@ frm.addEventListener("submit", (e) => {
 
   const valorUnidadeDesconto = preco / 2;
   const valorTotal = preco * 2 + valorUnidadeDesconto;
+
   resp1.innerText = `${produto} - Promoção: Leve 3 por R$: ${valorTotal.toFixed(
     2
   )}`;
