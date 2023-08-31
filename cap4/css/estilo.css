@@ -1,0 +1,21 @@
+img {
+    float: left;
+    height: 100px;
+    width: 100px;
+}
+
+h1 {
+    border-bottom-style: inset ;
+}
+
+.divHead {
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+}
+
+.divContent {
+display: flex;
+justify-content: space-around;
+}
+
