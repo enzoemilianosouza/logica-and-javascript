@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+    <link rel="stylesheet" href="/cap4/css/estilo.css" >
+    <link rel="icon" type="image/png" href="/img/balanca.png" >
+</head>
+<body>
+    <div>
+
+        <div class="divHead">
+            <img src="/img/balanca.png" alt="balança">
+            <h1>Programa Cálculo do Peso Ideal</h1>
+        </div>
+        <div class="divContent">
+            <form>
+                <p> Nome: 
+                    <input type="text" id="inNome" required>
+                </p>
+                
+                <p>Sexo:
+                    <input type='radio' name="sexo" id="inMasculino" required> Masculino
+                    <input type='radio' name="sexo" id="inFeminino" required>  Feminino
+                </p>
+                
+                <p> Altura: <input type="text" id="inAltura" step="0.1" min="0" required></p>
+                <input type="submit" value="Calcular Peso Ideal">
+            <input type="reset" value="Limpar Campos">
+        </form>
+        
+        <h3></h3>
+    </div>
+    <script src="/cap4/ex_cap4_js/ex4_2.js"></script>
+</div>
+</body>
+</html>
