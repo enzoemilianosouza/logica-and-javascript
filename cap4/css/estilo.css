@@ -1,7 +1,5 @@
 img {
     float: left;
-    height: 100px;
-    width: 100px;
 }
 
 h1 {
@@ -15,7 +13,9 @@ h1 {
 }
 
 .divContent {
-display: flex;
-justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
