@@ -13,3 +13,5 @@ form.addEventListener("submit", (e) => {
 
   resposta.innerText = `Hora na frança: ${horaFrança.toFixed(2)}`;
 });
+
+//tentar resolver sem o if, resolver com %.
