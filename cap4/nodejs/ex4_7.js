@@ -2,13 +2,14 @@ const prompt = require("prompt-sync")();
 
 const qntdPessoas = Number(prompt("Número de pessoas:"));
 const qntdPeixes = Number(prompt("Número de peixes:"));
-
-const valorPessoas = qntdPessoas * 20;
-
+const valorEntrada = 20;
+const valorPorPeixe = 12;
+const valorPessoas = qntdPessoas * valorEntrada;
 let valorPagar;
 
 if (qntdPeixes > qntdPessoas) {
-  const valorPeixes = (qntdPeixes - qntdPessoas) * 12;
+  const peixesExcedente = qntdPeixes - qntdPessoas;
+  const valorPeixes = peixesExcedente * valorPorPeixe;
   valorPagar = valorPeixes + valorPessoas;
 }
 
