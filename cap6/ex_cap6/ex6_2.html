@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Descubra o número</title>
+  </head>
+  <body>
+    <p>Descubra o Número - GAME</p>
+
+    <form>
+      <p>
+        Número: <input id="inNumber" required />
+        <input value="Apostar" id="btnSubmit" type="submit" />
+        <input
+          value="Jogar novamente"
+          type="button"
+          id="btNovo"
+          class="oculta"
+        />
+      </p>
+    </form>
+
+    <h3>Erros: <span id="outErros">0</span></h3>
+
+    <h3>Chances: <span id="outChances">6</span></h3>
+
+    <h3><span id="outDica">Dica: É um número entre 1 e 100</span></h3>
+
+    <script src="/cap6/ex_cap6_js/ex6_2.js"></script>
+  </body>
+</html>

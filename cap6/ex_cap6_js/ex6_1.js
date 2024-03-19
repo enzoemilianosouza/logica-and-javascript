@@ -59,7 +59,7 @@ forms.btnAtender.addEventListener("click", () => {
   let lista = "";
 
   pacientes.forEach((paciente, i) => {
-    lista = +`${i + 1}. ${pacientes}\n`;
+    lista += `${i + 1}. ${paciente}\n`;
     respostaLista.innerText = lista;
   });
 });
