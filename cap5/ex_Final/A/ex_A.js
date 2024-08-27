@@ -7,7 +7,7 @@ form.addEventListener("submit", (e) => {
   const valorFruta = form.inFruta.value;
   const valorNumber = Number(form.inNumber.value);
 
-  let resultado = ""; //var importante para exibir o resultado
+  let resultado = "";
 
   for (let i = 1; i <= valorNumber; i++) {
     resultado += `${valorFruta} * `;
