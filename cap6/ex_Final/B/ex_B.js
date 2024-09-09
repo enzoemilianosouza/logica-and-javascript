@@ -23,18 +23,24 @@ formulario.addEventListener("submit", (e) => {
 });
 
 formulario.btOrdem.addEventListener("click", () => {
-  let state = true;
+  let estaOrdenado = true; // Assume que está ordenado inicialmente
+
+  console.log(arrNumero.length);
+
+  // Loop até o penúltimo elemento, comparando com o próximo
   for (let i = 0; i < arrNumero.length - 1; i++) {
-    if (arrNumero[i] >= arrNumero[i + 1]) {
-      state = false;
-    } else {
-      state = true;
+    if (arrNumero[i] > arrNumero[i + 1]) {
+      estaOrdenado = false; // Se encontrar um fora de ordem, marca como falso
+      break; // Interrompe o loop, pois já sabemos que não está ordenado
     }
   }
 
-  if (state) {
-    resh4.innerText = "A lista está na ordem crescente!";
+  // Mensagem após a verificação completa
+  if (estaOrdenado) {
+    resh4.innerText = "Está na ordem crescente!";
   } else {
-    resh4.innerText = "Atenção...não está na ordem crescente!";
+    resh4.innerText = "Atenção... não está na ordem crescente!";
   }
+
+  formulario.reset();
 });
