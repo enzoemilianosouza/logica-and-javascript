@@ -52,5 +52,10 @@ form.inAprove.addEventListener("click", () => {
   const listResult = lista.reverse();
 
   // Exibe o resultado no resph3 com quebras de linha
-  resph3.innerHTML = listResult.join("<br>");
+
+  if (listResult.length === 0) {
+    alert("Não há!");
+  } else {
+    resph3.innerHTML = listResult.join("<br>");
+  }
 });
